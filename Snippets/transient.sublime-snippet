@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+<?php
+  \$transient_name = '$0';
+  \$transient = get_site_transient(\$transient_name);
+  if (empty(\$transient)) :
+?>
+
+<?php
+  set_site_transient(\$transient_name, \$transient, HOUR_IN_SECONDS);
+  endif;
+
+  echo \$transient;
+?>
+]]></content>
+	<tabTrigger>transient</tabTrigger>
+	<description>Check, set and use transient</description>
+	<scope>source.php</scope>
+</snippet>

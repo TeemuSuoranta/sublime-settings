@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+<?php
+  \$args = array( 
+    'post_type'              => '$0',
+    'posts_per_page'         => 10,
+    'no_found_rows'          => true,  // skip loading pagination
+    'update_post_term_cache' => false, // skip loading terms
+    'update_post_meta_cache' => false, // skip loading meta
+  );
+  \$query = new WP_Query(\$args);
+?>
+
+<?php while (\$query->have_posts() ) : \$query->the_post(); ?>
+
+<?php endwhile; ?>
+]]></content>
+	<tabTrigger>query</tabTrigger>
+	<scope>source.php</scope>
+  <description>Basic WP_Query</description>
+</snippet>

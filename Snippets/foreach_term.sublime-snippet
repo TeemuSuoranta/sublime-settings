@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+<?php foreach(\$terms as \$term) : ?>
+  <?php if (\$term instanceof WP_Term) : ?>
+    <a href="<?php echo esc_url(get_term_link(\$term)); ?>"><?php echo esc_html(\$term->name); ?></a>
+  <?php endif; ?>
+<?php endforeach; ?>
+]]></content>
+	<tabTrigger>foreach_terms</tabTrigger>
+  <description>Foreach WP_Terms</description>
+</snippet>

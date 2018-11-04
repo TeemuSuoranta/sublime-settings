@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+<?php if (have_rows('$0')) : ?>
+
+  <?php while (have_rows('$0')) : the_row(); ?>
+
+    <?php the_sub_field('sub_field_name'); ?>
+
+  <?php endwhile; ?>
+
+<?php endif; ?>
+]]></content>
+	<tabTrigger>repeater</tabTrigger>
+	<scope>source.php</scope>
+	<description>ACF repeater</description>
+</snippet>

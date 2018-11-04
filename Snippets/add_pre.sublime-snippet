@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * $0
+ *
+ * @param WP_Query \$query the current WP_Query
+ */
+function prefix_function_for_pre_get_posts(\$query) {
+
+  if (!is_admin() && \$query->is_main_query()) {
+    //\$query->set('posts_per_page', 10);
+  }
+
+}
+add_action('pre_get_posts', 'prefix_function_for_pre_get_posts');
+]]></content>
+	<tabTrigger>add_pre</tabTrigger>
+  <description>add_action('pre_get_posts')</description>
+</snippet>

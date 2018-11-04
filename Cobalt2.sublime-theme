@@ -1,0 +1,8 @@
+[
+  // Dark title bar
+  {
+    "class": "title_bar",
+    "fg": [170, 170, 170],
+    "bg": [28, 37, 44]
+  }
+]

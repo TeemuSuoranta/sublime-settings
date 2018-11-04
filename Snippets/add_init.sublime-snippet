@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * $0
+ */
+function prefix_function_for_init() {
+
+}
+add_action('init', 'prefix_function_for_init');
+]]></content>
+	<tabTrigger>add_init</tabTrigger>
+  <description>add_action('init')</description>
+</snippet>

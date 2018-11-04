@@ -1,0 +1,11 @@
+{
+	// The path to the php executable.
+	// Needed for windows, or anyone who doesn't/can't make phars
+	// executable. Avoid setting this if at all possible
+	"phpcs_php_path": "/usr/local/bin/phpcs",
+
+	// Project based PHPCS
+	"phpcs_additional_args": {
+    "-n": ""
+  },
+}
